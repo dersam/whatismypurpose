@@ -5,8 +5,8 @@
  * @author Sam Schmidt
  */
 var butter = (function(){
-    var verbs;
-    var nouns;
+    var verbs = null;
+    var nouns = null;
 
     /**
      * SHOW ME WHAT YOU GOT
@@ -15,8 +15,8 @@ var butter = (function(){
         var $verb = document.getElementById('verb');
         var $noun = document.getElementById('noun');
 
-        $noun.innerHTML = getNounFromDictionary();
         $verb.innerHTML = getVerbFromDictionary();
+        $noun.innerHTML = getNounFromDictionary();
     }
 
     function init() {
@@ -24,12 +24,28 @@ var butter = (function(){
         $purpose.addEventListener('click', onPurposeRequest);
     }
 
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
     function getVerbFromDictionary() {
-        return 'pass';
+        var v = 'pass';
+
+        if (verbs != null) {
+            v = verbs[getRandomInt(0, verbs.length-1)];
+        }
+
+        return v;
     }
 
     function getNounFromDictionary() {
-        return 'butter';
+        var n = 'butter';
+
+        if (nouns != null) {
+            n = nouns[getRandomInt(0, verbs.length-1)];
+        }
+
+        return n;
     }
 
     function loadData()
