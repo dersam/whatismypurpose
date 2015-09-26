@@ -19,12 +19,12 @@ var butter = (function(){
         $purpose.addEventListener('click', onPurposeRequest);
     }
 
-    function getNounFromDictionary() {
-        return 'butter';
-    }
-
     function getVerbFromDictionary() {
         return 'pass';
+    }
+
+    function getNounFromDictionary() {
+        return 'butter';
     }
 
     /**
