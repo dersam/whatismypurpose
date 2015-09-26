@@ -1,8 +1,13 @@
 /**
  * Made without jQuery because arbitrary restrictions
  * are fun. I guess.
+ *
+ * @author Sam Schmidt
  */
 var butter = (function(){
+    var verbs;
+    var nouns;
+
     /**
      * SHOW ME WHAT YOU GOT
      */
@@ -27,6 +32,37 @@ var butter = (function(){
         return 'butter';
     }
 
+    function loadData()
+    {
+        fetchJson('data/verbs.json', function(response) {
+            verbs = JSON.parse(response);
+        });
+
+        fetchJson('data/nouns.json', function(response) {
+            nouns = JSON.parse(response);
+        });
+    }
+
+    function fetchJson(url, onLoad)
+    {
+        var request = new XMLHttpRequest();
+        request.open('GET', url, true);
+
+        request.onload = function() {
+            if (this.status >= 200 && this.status < 400) {
+                onLoad(this.response);
+            } else {
+                //error
+            }
+        };
+
+        request.onerror = function() {
+            // There was a connection error of some sort
+        };
+
+        request.send();
+    }
+
     /**
      * fire the plasma cannon
      */
@@ -36,5 +72,8 @@ var butter = (function(){
         } else {
             document.addEventListener('DOMContentLoaded', init);
         }
+
+        //Load files
+        loadData();
     })();
 })();
