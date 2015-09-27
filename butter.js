@@ -3,6 +3,9 @@ var butter = (function($){
     var verbs = null;
     var nouns = null;
 
+    var lastVerb = null;
+    var lastNoun = null;
+
     /**
      * SHOW ME WHAT YOU GOT
      */
@@ -19,11 +22,37 @@ var butter = (function($){
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    //Recursion for kicks.
+
+    function getKindaRandomVerbIndex() {
+        var v = getRandomInt(0, verbs.length-1);
+
+        if (v == lastVerb) {
+            v = getKindaRandomVerbIndex();
+        }
+
+        lastVerb = v;
+
+        return v;
+    }
+
+    function getKindaRandomNounIndex() {
+        var n = getRandomInt(0, nouns.length-1);
+
+        if (n == lastNoun) {
+            n = getKindaRandomNounIndex();
+        }
+
+        lastNoun = n;
+
+        return n;
+    }
+
     function getVerbFromDictionary() {
         var v = 'pass';
 
         if (verbs != null) {
-            v = verbs[getRandomInt(0, verbs.length-1)];
+            v = verbs[getKindaRandomVerbIndex()];
         }
 
         return v;
@@ -33,7 +62,7 @@ var butter = (function($){
         var n = 'butter';
 
         if (nouns != null) {
-            n = nouns[getRandomInt(0, verbs.length-1)];
+            n = nouns[getKindaRandomNounIndex()];
         }
 
         return n;
