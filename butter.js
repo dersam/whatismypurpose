@@ -12,6 +12,7 @@ var butter = (function($){
     function onPurposeRequest() {
         $('#verb').html(getVerbFromDictionary());
         $('#noun').html(getNounFromDictionary());
+        $('#response').removeClass('hidden');
     }
 
     function init() {
