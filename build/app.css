@@ -5,7 +5,9 @@ Color palettes!!
   height: 350px;
   border: 1px solid #558C12;
   box-shadow: 1px 1px 1px 1px;
-  margin-left: 50px;
+  top: 25%;
+  position: absolute;
+  left: 33%;
   width: 650px;
 }
 .chat .history {
