@@ -4,11 +4,12 @@
   "description": "well what is it",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-autoprefixer": "^3.0.2",
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-concat": "^2.6.0",
     "gulp-jshint": "^1.11.2",
     "gulp-less": "^3.0.3",
-    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.4.1",
     "jshint": "^2.8.0"
   },

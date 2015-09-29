@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     concat = require('gulp-concat'),
     less = require('gulp-less'),
-    autoprefix = require('gulp-autoprefixer');
+    autoprefix = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('minify', function () {
     gulp.src('assets/*.js')
