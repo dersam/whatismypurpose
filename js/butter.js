@@ -52,7 +52,7 @@ var butter = (function($){
     function getVerbFromDictionary() {
         var v = 'pass';
 
-        if (verbs != null) {
+        if (verbs !== null) {
             v = verbs[getKindaRandomVerbIndex()];
         }
 
@@ -62,7 +62,7 @@ var butter = (function($){
     function getNounFromDictionary() {
         var n = 'butter';
 
-        if (nouns != null) {
+        if (nouns !== null) {
             n = nouns[getKindaRandomNounIndex()];
         }
 
