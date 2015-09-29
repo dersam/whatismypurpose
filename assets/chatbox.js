@@ -4,7 +4,7 @@ var chatbox = (function($) {
     function onPurposeResponse(event, verb, noun) {
         console.log(verb);
         console.log(noun);
-
+        writeToChat('butterbot', 'what is my purpose');
         writeToChat('rick', 'you '+verb+' '+noun+'.');
     }
 
