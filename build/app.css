@@ -1,6 +1,9 @@
 /**
 Color palettes!!
 */
+body {
+  padding-top: 25px;
+}
 .chat {
   margin-top: 20px;
   height: 350px;
@@ -20,6 +23,7 @@ Color palettes!!
   border-left: 1px solid #558C12;
 }
 #purpose {
+  margin-top: 25px;
   padding: 5px 10px;
   background-color: #CEF2A3;
   color: black;
