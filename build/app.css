@@ -4,19 +4,19 @@ Color palettes!!
 body {
   padding-top: 25px;
 }
-.chat {
+#chat {
   margin-top: 20px;
   height: 350px;
   border: 1px solid #558C12;
   box-shadow: 1px 1px 5px -2px inset;
   width: 650px;
 }
-.chat .history {
+#chat #history {
   width: 500px;
   overflow-y: auto;
   overflow-x: hidden;
 }
-.chat .users {
+#chat #users {
   float: right;
   height: 100%;
   width: 150px;

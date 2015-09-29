@@ -2,6 +2,8 @@ var chatbox = (function($){
     function onPurposeResponse(event, verb, noun) {
         console.log(verb);
         console.log(noun);
+
+        var $history = $('')
     }
 
     function init() {
