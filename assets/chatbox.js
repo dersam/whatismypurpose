@@ -1,14 +1,11 @@
 var chatbox = (function($){
-    function onPurposeResponse() {
-
+    function onPurposeResponse(event, verb, noun) {
+        console.log(verb);
+        console.log(noun);
     }
 
     function init() {
-        $('body').on('purposeResponse', function(e, verb, noun){
-            console.log(verb);
-            console.log(noun);
-
-        });
+        $('body').on('purposeResponse', onPurposeResponse);
     }
 
     (function __init(){

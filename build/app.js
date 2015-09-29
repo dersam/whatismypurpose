@@ -1,3 +1,3 @@
 var butter=function(n){function u(){n("body").trigger("purposeResponse",[l(),c()])}function r(){n("#purpose").on("click",u)}function t(n,u){return Math.floor(Math.random()*(u-n+1))+n}function o(){var n=t(0,f.length-1);return n==s&&(n=o()),s=n,n}function e(){var n=t(0,a.length-1);return n==v&&(n=e()),v=n,n}function l(){var n="pass";return null!==f&&(n=f[o()]),n}function c(){var n="butter";return null!==a&&(n=a[e()]),n}function i(){n.getJSON("words.json",function(n){f=n.verbs,a=n.nouns})}var f=null,a=null,s=null,v=null;!function(){n(document).ready(r),i()}()}(jQuery);
-var chatbox=function(o){function n(){o("body").on("purposeResponse",function(o,n,c){console.log(n),console.log(c)})}!function(){o(document).ready(n)}()}(jQuery);
+var chatbox=function(o){function n(o,n,c){console.log(n),console.log(c)}function c(){o("body").on("purposeResponse",n)}!function(){o(document).ready(c)}()}(jQuery);
 //# sourceMappingURL=../app.js.map
