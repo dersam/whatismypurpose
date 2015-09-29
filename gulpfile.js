@@ -12,3 +12,7 @@ gulp.task('minify', function () {
         .pipe(concat('app.js'))
         .pipe(gulp.dest('build'));
 });
+
+gulp.task('watch', function () {
+    gulp.watch('js/*.js', ['minify']);
+});
