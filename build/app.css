@@ -1,6 +1,24 @@
 /**
 Color palettes!!
 */
+.chat {
+  height: 350px;
+  border: 1px solid #558C12;
+  box-shadow: 1px 1px 1px 1px;
+  margin-left: 50px;
+  width: 650px;
+}
+.chat .history {
+  width: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.chat .users {
+  float: right;
+  height: 100%;
+  width: 150px;
+  border-left: 1px solid #558C12;
+}
 body {
   background-color: #90C94A;
 }

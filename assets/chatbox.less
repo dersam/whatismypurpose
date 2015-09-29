@@ -1,0 +1,23 @@
+@history-width: 500px;
+@user-width: 150px;
+
+.chat {
+  height: 350px;
+  border: 1px solid @secondary;
+  box-shadow: 1px 1px 1px 1px;
+  margin-left: 50px;
+  width: @history-width + @user-width;
+
+  .history {
+    width: @history-width;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .users {
+    float: right;
+    height: 100%;
+    width: @user-width;
+    border-left: 1px solid @secondary;
+  }
+}
