@@ -15,6 +15,13 @@ gulp.task('minify', function () {
         .pipe(gulp.dest('build'));
 });
 
+gulp.task('css', function () {
+    gulp.src('assets/app.less')
+        .pipe(less())
+        .pipe(autoprefix('last 2 version', 'ie 8', 'ie 9'))
+        .pipe(gulp.dest('build'));
+});
+
 gulp.task('watch', function () {
     gulp.watch('js/*.js', ['minify']);
 });
