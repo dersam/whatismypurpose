@@ -4,10 +4,10 @@ var chatbox = (function($){
     }
 
     function init() {
-        $(body).on('purposeResponse', function(e, verb, noun){
-            console.log(e);
-            console.log(noun);
+        $('body').on('purposeResponse', function(e, verb, noun){
             console.log(verb);
+            console.log(noun);
+
         });
     }
 

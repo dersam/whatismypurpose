@@ -10,9 +10,9 @@ var butter = (function($){
      * SHOW ME WHAT YOU GOT
      */
     function onPurposeRequest() {
-        $(body).trigger( "purposeResponse", [
-            getVerbFromDictionary,
-            getNounFromDictionary
+        $('body').trigger( "purposeResponse", [
+            getVerbFromDictionary(),
+            getNounFromDictionary()
         ]);
     }
 

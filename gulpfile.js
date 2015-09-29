@@ -11,8 +11,10 @@ gulp.task('minify', function () {
     gulp.src('assets/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
+        .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(concat('app.js'))
+        .pipe(sourcemaps.write('../'))
         .pipe(gulp.dest('build'));
 });
 
