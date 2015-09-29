@@ -72,7 +72,7 @@ var butter = (function($){
 
     function loadData()
     {
-        $.getJSON('words.json', function(data) {
+        $.getJSON('data/words.json', function(data) {
             verbs = data.verbs;
             nouns = data.nouns;
         });
