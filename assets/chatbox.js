@@ -1,12 +1,19 @@
-var chatbox = (function($){
+var chatbox = (function($) {
+    var $history;
+
     function onPurposeResponse(event, verb, noun) {
         console.log(verb);
         console.log(noun);
 
-        var $history = $('')
+        writeToChat('rick', 'you '+verb+' '+noun+'.');
+    }
+
+    function writeToChat(user, text) {
+        $history.append('<div>'+user+': '+text+'</div>');
     }
 
     function init() {
+        $history = $('#history');
         $('body').on('purposeResponse', onPurposeResponse);
     }
 

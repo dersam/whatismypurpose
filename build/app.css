@@ -9,12 +9,13 @@ body {
   height: 350px;
   border: 1px solid #558C12;
   box-shadow: 1px 1px 5px -2px inset;
-  width: 650px;
+  width: 655px;
 }
 #chat #history {
   width: 500px;
   overflow-y: auto;
   overflow-x: hidden;
+  float: left;
 }
 #chat #users {
   float: right;
