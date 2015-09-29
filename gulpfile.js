@@ -23,5 +23,6 @@ gulp.task('css', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('js/*.js', ['minify']);
+    gulp.watch('assets/*.js', ['minify']);
+    gulp.watch('assets/*.less', ['css']);
 });
