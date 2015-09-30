@@ -5,6 +5,7 @@ var chatbox = (function($) {
         console.log(verb);
         console.log(noun);
 
+        writeToChat('butterbot', 'what is my purpose?');
         writeToChat('rick', 'you '+verb+' '+noun+'.');
     }
 
