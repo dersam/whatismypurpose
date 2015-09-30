@@ -17,7 +17,7 @@ var butter = (function($){
     }
 
     function init() {
-        $('#purpose').on('click', onPurposeRequest);
+        $('.purpose').on('click', onPurposeRequest);
     }
 
     function getRandomInt(min, max) {
