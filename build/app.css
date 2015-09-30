@@ -10,11 +10,13 @@ body {
   border: 1px solid;
   box-shadow: 1px 1px 5px -2px inset;
   width: 655px;
+  overflow: hidden;
 }
 #history {
   width: 500px;
   height: 348px;
   overflow-x: hidden;
+  height: 350px;
   float: left;
   padding-top: 3px;
   padding-left: 3px;
