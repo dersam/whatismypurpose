@@ -4,6 +4,8 @@ var chatbox = (function($) {
     function onPurposeResponse(event, verb, noun) {
         writeToChat('butterbot', 'what is my purpose?');
         writeToChat('bigrick69', 'you '+verb+' '+noun+'.');
+
+        $history.scrollTop($history.prop('scrollHeight'));
     }
 
     function writeToChat(user, text) {
