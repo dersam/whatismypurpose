@@ -9,7 +9,7 @@ var chatbox = (function($) {
     }
 
     function writeToChat(user, text) {
-        $history.append('<div class="line">'+user+': '+text+'</div>');
+        $history.append('<div class="line '+user+'">'+user+': '+text+'</div>');
     }
 
     function init() {
