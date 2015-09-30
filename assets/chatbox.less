@@ -1,0 +1,45 @@
+@history-width: 500px;
+@user-width: 160px;
+
+body {
+  padding-top: 25px;
+  padding-left: 50px;
+}
+
+#chat {
+  margin-top: 20px;
+  height: 350px;
+}
+
+#history-container {
+  width: @history-width;
+  float: left;
+  border: 1px solid;
+}
+
+#history {
+  height: 348px;
+  overflow-x: hidden;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+#history .line {
+  padding-bottom: 5px;
+}
+
+#users {
+  float: left;
+  height: 100%;
+  min-width: @user-width;
+  border: 1px solid;
+}
+
+#inputbox {
+  width: @history-width;
+  clear: left;
+}
+
+.purpose .btn {
+  width: 100%;
+}

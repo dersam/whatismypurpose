@@ -1,0 +1,3 @@
+var interjections = function($){
+
+}(jQuery);

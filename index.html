@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>What is my purpose</title>
-    <link rel="stylesheet" href="butter.css"/>
+    <link rel="stylesheet" href="build/dosstrap.css"/>
+    <link rel="stylesheet" href="build/app.css"/>
 </head>
 <body>
-    <div class="container">
-        <div id="request">
-            <button id="purpose">what is my purpose?</button>
+    <div id="chat">
+        <div id="history-container">
+            <div id="history">
+
+            </div>
         </div>
 
-        <div id="response" class="hidden">
-            you <span id="verb"></span> <span id="noun"></span>.
+        <div id="users">
+            --online
+            <ul>
+                <li>butterbot</li>
+                <li class="bigrick69">bigrick69</li>
+                <li>mortiest</li>
+                <li>birdperson</li>
+            </ul>
+            --offline
+            <ul>
+                <li>k.michael</li>
+                <li>unity</li>
+                <li>mjr</li>
+            </ul>
+        </div>
+        <div id="inputbox" class="purpose">
+            <a role="button" class="btn btn-info">
+                What is my purpose?
+            </a>
         </div>
     </div>
-    <a id="repo" href="https://github.com/dersam/whatismypurpose">Github</a>
 </body>
 <script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="butter.js"></script>
+<script src="build/app.js"></script>
 </html>
