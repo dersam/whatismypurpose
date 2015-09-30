@@ -33,9 +33,12 @@ body {
   width: 500px;
   clear: left;
 }
-.purpose {
+.purpose .btn {
   width: 100%;
 }
 .line.bigrick69 {
   color: #009900;
+}
+.line.butterbot {
+  color: rgba(151, 127, 53, 0.95);
 }
