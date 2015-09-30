@@ -20,6 +20,9 @@ body {
   padding-top: 3px;
   padding-left: 3px;
 }
+#history .line {
+  padding-bottom: 5px;
+}
 #users {
   float: left;
   height: 100%;
