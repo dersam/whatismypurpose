@@ -5,25 +5,24 @@ body {
   padding-top: 25px;
 }
 #chat {
+  width: 650px 5;
   margin-top: 20px;
   height: 350px;
+}
+#history-container {
+  width: 500px;
+  float: left;
   border: 1px solid;
-  box-shadow: 1px 1px 5px -2px inset;
-  width: 655px;
-  overflow: hidden;
 }
 #history {
-  width: 500px;
   height: 348px;
   overflow-x: hidden;
-  height: 350px;
-  float: left;
   padding-top: 3px;
   padding-left: 3px;
 }
 #users {
-  float: right;
+  float: left;
   height: 100%;
   width: 150px;
-  border-left: 1px solid;
+  border: 1px solid;
 }

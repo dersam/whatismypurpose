@@ -6,32 +6,33 @@ body {
 }
 
 #chat {
+  width: @history-width + @user-width +5;
   margin-top: 20px;
   height: 350px;
-  border: 1px solid;
-  box-shadow: 1px 1px 5px -2px inset;
-  //top: 25%;
-  //position: absolute;
-  //left: 33%;
-  width: @history-width + @user-width + 5;
+
 }
 
 #history-container {
-
+  width: @history-width;
+  float: left;
+  border: 1px solid;
 }
 
 #history {
-  width: @history-width;
   height: 348px;
   overflow-x: hidden;
-  float: left;
   padding-top: 3px;
   padding-left: 3px;
 }
 
 #users {
-  float: right;
+  float: left;
+  float: left;
   height: 100%;
   width: @user-width;
-  border-left: 1px solid;
+  border: 1px solid;
 }
+
+//#inputbox {
+//  width: @chatbox-width;
+//}
