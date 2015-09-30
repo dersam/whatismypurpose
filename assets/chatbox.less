@@ -3,13 +3,12 @@
 
 body {
   padding-top: 25px;
+  padding-left: 50px;
 }
 
 #chat {
-  width: @history-width + @user-width +5;
   margin-top: 20px;
   height: 350px;
-
 }
 
 #history-container {
@@ -27,12 +26,16 @@ body {
 
 #users {
   float: left;
-  float: left;
   height: 100%;
   min-width: @user-width;
   border: 1px solid;
 }
 
-//#inputbox {
-//  width: @chatbox-width;
-//}
+#inputbox {
+  width: @history-width;
+  clear: left;
+}
+
+#purpose {
+  width: 100%;
+}

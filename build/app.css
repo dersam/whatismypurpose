@@ -3,9 +3,9 @@ Color palettes!!
 */
 body {
   padding-top: 25px;
+  padding-left: 50px;
 }
 #chat {
-  width: 660px 5;
   margin-top: 20px;
   height: 350px;
 }
@@ -25,4 +25,11 @@ body {
   height: 100%;
   min-width: 160px;
   border: 1px solid;
+}
+#inputbox {
+  width: 500px;
+  clear: left;
+}
+#purpose {
+  width: 100%;
 }
