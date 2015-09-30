@@ -14,18 +14,24 @@ body {
   //position: absolute;
   //left: 33%;
   width: @history-width + @user-width + 5;
+}
 
-  #history {
-    width: @history-width;
-    overflow-y: auto;
-    overflow-x: hidden;
-    float: left;
-  }
+#history-container {
 
-  #users {
-    float: right;
-    height: 100%;
-    width: @user-width;
-    border-left: 1px solid;
-  }
+}
+
+#history {
+  width: @history-width;
+  height: 350px;
+  overflow-x: hidden;
+  float: left;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+#users {
+  float: right;
+  height: 100%;
+  width: @user-width;
+  border-left: 1px solid;
 }

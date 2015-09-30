@@ -2,11 +2,8 @@ var chatbox = (function($) {
     var $history;
 
     function onPurposeResponse(event, verb, noun) {
-        console.log(verb);
-        console.log(noun);
-
         writeToChat('butterbot', 'what is my purpose?');
-        writeToChat('rick', 'you '+verb+' '+noun+'.');
+        writeToChat('bigrick69', 'you '+verb+' '+noun+'.');
     }
 
     function writeToChat(user, text) {

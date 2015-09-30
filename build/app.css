@@ -11,13 +11,15 @@ body {
   box-shadow: 1px 1px 5px -2px inset;
   width: 655px;
 }
-#chat #history {
+#history {
   width: 500px;
-  overflow-y: auto;
+  height: 350px;
   overflow-x: hidden;
   float: left;
+  padding-top: 3px;
+  padding-left: 3px;
 }
-#chat #users {
+#users {
   float: right;
   height: 100%;
   width: 150px;
