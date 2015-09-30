@@ -5,7 +5,7 @@ body {
   padding-top: 25px;
 }
 #chat {
-  width: 650px 5;
+  width: 660px 5;
   margin-top: 20px;
   height: 350px;
 }
@@ -23,6 +23,6 @@ body {
 #users {
   float: left;
   height: 100%;
-  width: 150px;
+  min-width: 160px;
   border: 1px solid;
 }
