@@ -5,7 +5,9 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     less = require('gulp-less'),
     autoprefix = require('gulp-autoprefixer'),
-    sourcemaps = require('gulp-sourcemaps');
+    sourcemaps = require('gulp-sourcemaps'),
+    gutil = require('gulp-util')
+    ;
 
 gulp.task('minify', function () {
     gulp.src('assets/*.js')
@@ -26,10 +28,20 @@ gulp.task('css', function () {
 });
 
 gulp.task('dict', function(){
-
+    string_src("words.compiled.json", 'hello world')
+        .pipe(gulp.dest('build/'))
 });
 
 gulp.task('watch', function () {
     gulp.watch('assets/*.js', ['minify']);
     gulp.watch('assets/*.less', ['css']);
 });
+
+function string_src(filename, string) {
+    var src = require('stream').Readable({ objectMode: true });
+    src._read = function () {
+        this.push(new gutil.File({ cwd: "", base: "", path: filename, contents: new Buffer(string) }));
+        this.push(null);
+    };
+    return src;
+}
