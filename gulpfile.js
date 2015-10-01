@@ -42,10 +42,28 @@ gulp.task('watch', function () {
 
 var dictionary = (function(){
     function compile(file) {
-        file.contents = Buffer.concat([
-            new Buffer('HELLO IM SAM'),
-            file.contents
-        ]);
+        var json = JSON.parse(file.contents);
+        var dict = {
+            verbs: json.verbs,
+            tags: {
+                global: []
+            }
+        };
+
+        for (var index = 0; index < json.nouns.length; index++) {
+            var noun = json.nouns[index].noun;
+            var tags = json.nouns[index].tags;
+            dict.tags.global.push(noun);
+            tags.forEach(function(value){
+                if (!dict.tags.hasOwnProperty(value)) {
+                    json.nouns[index].tags[value] = [];
+                }
+
+                json.nouns[index].tags[value].push(noun);
+            });
+        }
+
+        file.contents = new Buffer(JSON.stringify(dict), "utf-8");
     }
 
     return {
