@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     less = require('gulp-less'),
     autoprefix = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
-    gutil = require('gulp-util')
+    tap = require('gulp-tap'),
+    rename = require('gulp-rename')
     ;
 
 gulp.task('minify', function () {
@@ -28,8 +29,10 @@ gulp.task('css', function () {
 });
 
 gulp.task('dict', function(){
-    string_src("words.compiled.json", 'hello world')
-        .pipe(gulp.dest('build/'))
+    gulp.src('assets/words.json')
+        .pipe(tap(dictionary.compile))
+        .pipe(rename('words.compiled.json'))
+        .pipe(gulp.dest('build/'));
 });
 
 gulp.task('watch', function () {
@@ -37,11 +40,15 @@ gulp.task('watch', function () {
     gulp.watch('assets/*.less', ['css']);
 });
 
-function string_src(filename, string) {
-    var src = require('stream').Readable({ objectMode: true });
-    src._read = function () {
-        this.push(new gutil.File({ cwd: "", base: "", path: filename, contents: new Buffer(string) }));
-        this.push(null);
-    };
-    return src;
-}
+var dictionary = (function(){
+    function compile(file) {
+        file.contents = Buffer.concat([
+            new Buffer('HELLO IM SAM'),
+            file.contents
+        ]);
+    }
+
+    return {
+        compile: compile
+    }
+})();
