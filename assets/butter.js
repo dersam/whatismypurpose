@@ -41,19 +41,6 @@ var butter = (function($){
         return v;
     }
 
-    function getKindaRandomNounIndex(tag) {
-        var n = getRandomInt(0, nouns[tag].words.length-1);
-
-        if (tag != lastTag && n == lastNoun) {
-            n = getKindaRandomNounIndex();
-        }
-
-        lastNoun = n;
-        lastTag = tag;
-
-        return n;
-    }
-
     function getVerbFromDictionary() {
         var v = 'pass';
 
@@ -69,12 +56,27 @@ var butter = (function($){
 
         if (nouns !== null) {
             if (tags.forbid.length === 0) {
-                var index = getKindaRandomNounIndex('global');
+                var index = getRandomInt(0, nouns.global.words.length-1);
                 n = nouns.global.words[index];
             } else {
                 //if the list of tags doesn't exist, build it
                 //then, pick from the tags that are not forbidden
                 //always exclude global here
+
+                var nounClone = clone(nouns);
+
+                tags.forbid.forEach(function(tagName){
+                    delete nounClone[tagName];
+                });
+
+                var result;
+                var count = 0;
+                for (var prop in nounClone) {
+                    if (Math.random() < 1 / ++count) {
+                        result = prop;
+                    }
+                }
+                n = result.words[getRandomInt(0, result.words.length-1)];
             }
         }
 
