@@ -18,3 +18,6 @@ Nouns are tagged based on what makes sense. This is somewhat arbitrary.
 
 List of tags:
 `person`, `activity`, `edible`, `liquid`, `animal`, `plant`, `building`, `group`
+
+The word list is compiled via the `gulp dict` task. This will output a JSON file
+based on words.json that list all eligible words for a verb.

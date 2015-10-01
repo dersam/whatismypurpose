@@ -25,6 +25,10 @@ gulp.task('css', function () {
         .pipe(gulp.dest('build'));
 });
 
+gulp.task('dict', function(){
+
+});
+
 gulp.task('watch', function () {
     gulp.watch('assets/*.js', ['minify']);
     gulp.watch('assets/*.less', ['css']);
