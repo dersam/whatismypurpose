@@ -1,79 +1,629 @@
 {
-  "verbs": [
-    "beautify",
-    "block",
-    "brainwash",
-    "build",
-    "burn",
-    "cloister",
-    "come",
-    "contort",
-    "cook",
-    "cut",
-    "deduce",
-    "direct",
-    "discipline",
-    "flatten",
-    "greet",
-    "hail",
-    "harbor",
-    "humor",
-    "ignite",
-    "imbibe",
-    "indoctrinate",
-    "keep",
-    "kill",
-    "pass",
-    "pipe",
-    "quote",
-    "regurgitate",
-    "return",
-    "salt",
-    "simmer",
-    "snort",
-    "swap",
-    "taste",
-    "thrill",
-    "torment",
-    "undertake",
-    "vindicate"
+  "verbs":[
+    {
+      "verb":"beautify",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"block",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"brainwash",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"build",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"burn",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"cloister",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"come",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"contort",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"cook",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"cut",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"deduce",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"direct",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"discipline",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"flatten",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"greet",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"hail",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"harbor",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"humor",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"ignite",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"imbibe",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"indoctrinate",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"keep",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"kill",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"pass",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"pipe",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"quote",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"regurgitate",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"return",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"salt",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"simmer",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"snort",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"swap",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"taste",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"thrill",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"torment",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"undertake",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    },
+    {
+      "verb":"vindicate",
+      "tags":{
+        "allow":[
+
+        ],
+        "forbid":[
+
+        ]
+      }
+    }
   ],
-  "nouns": [
-    "butter",
-    "cases",
-    "couplings",
-    "delicacies",
-    "dependants",
-    "erosions",
-    "farts",
-    "floorings",
-    "frozen concentrated dark matter",
-    "Gazorpazorpfield",
-    "giraffes",
-    "glibglobs",
-    "homesteads",
-    "hysterics",
-    "Jerry",
-    "kalaxian crystals",
-    "lettuce",
-    "megaseeds",
-    "microverses",
-    "moonmen",
-    "nests",
-    "oranges",
-    "palms",
-    "pawns",
-    "pitches",
-    "pygmies",
-    "quesadillas",
-    "Rick J19Z7",
-    "Roy",
-    "robots",
-    "satyrs",
-    "schoolboys",
-    "signals",
-    "stains",
-    "The Devil",
-    "tipsters"
+  "nouns":[
+    {
+      "noun":"butter",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"cases",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"couplings",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"delicacies",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"dependants",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"erosions",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"farts",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"floorings",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"frozen concentrated dark matter",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"Gazorpazorpfield",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"giraffes",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"glibglobs",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"homesteads",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"hysterics",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"Jerry",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"kalaxian crystals",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"lettuce",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"megaseeds",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"microverses",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"moonmen",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"nests",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"oranges",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"palms",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"pawns",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"pitches",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"pygmies",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"quesadillas",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"Rick J19Z7",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"Roy",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"robots",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"satyrs",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"schoolboys",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"signals",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"stains",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"The Devil",
+      "tags":[
+
+      ]
+    },
+    {
+      "noun":"tipsters",
+      "tags":[
+
+      ]
+    }
   ]
 }
