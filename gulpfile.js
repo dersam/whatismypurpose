@@ -54,20 +54,26 @@ var dictionary = (function(){
         var dict = {
             verbs: json.verbs,
             tags: {
-                global: []
+                global: {
+                    name: 'global',
+                    words: []
+                }
             }
         };
 
         for (var index = 0; index < json.nouns.length; index++) {
             var noun = json.nouns[index].noun;
             var tags = json.nouns[index].tags;
-            dict.tags.global.push(noun);
+            dict.tags.global.words.push(noun);
             tags.forEach(function(value){
                 if (!dict.tags.hasOwnProperty(value)) {
-                    json.nouns[index].tags[value] = [];
+                    json.nouns[index].tags[value] = {
+                        name: value,
+                        words: []
+                    };
                 }
 
-                json.nouns[index].tags[value].push(noun);
+                json.nouns[index].tags[value].words.push(noun);
             });
         }
 
