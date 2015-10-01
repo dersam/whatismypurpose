@@ -42,7 +42,7 @@ var butter = (function($){
     }
 
     function getKindaRandomNounIndex(tag) {
-        var n = getRandomInt(0, nouns.tags[tag].length-1);
+        var n = getRandomInt(0, nouns[tag].length-1);
 
         if (tag != lastTag && n == lastNoun) {
             n = getKindaRandomNounIndex();
@@ -68,8 +68,9 @@ var butter = (function($){
         var n = 'butter';
 
         if (nouns !== null) {
-            if (tags.forbid == []) {
-                n = nouns.tags.global[getKindaRandomNounIndex('global')];
+            if (tags.forbid.length === 0) {
+                var index = getKindaRandomNounIndex('global');
+                n = nouns.global[index];
             } else {
                 //if the list of tags doesn't exist, build it
                 //then, pick from the tags that are not forbidden
@@ -84,7 +85,7 @@ var butter = (function($){
     {
         $.getJSON('build/words.compiled.json', function(data) {
             verbs = data.verbs;
-            nouns = data.nouns;
+            nouns = data.tags;
         });
     }
 
