@@ -5,14 +5,17 @@ var butter = (function($){
 
     var lastVerb = null;
     var lastNoun = null;
+    var lastTag = null;
 
     /**
      * SHOW ME WHAT YOU GOT
      */
     function onPurposeRequest() {
+        var verb = getVerbFromDictionary();
+
         $('body').trigger( "purposeResponse", [
-            getVerbFromDictionary(),
-            getNounFromDictionary()
+            verb.verb,
+            getNounFromDictionary(verb.tags)
         ]);
     }
 
@@ -38,14 +41,15 @@ var butter = (function($){
         return v;
     }
 
-    function getKindaRandomNounIndex() {
-        var n = getRandomInt(0, nouns.length-1);
+    function getKindaRandomNounIndex(tag) {
+        var n = getRandomInt(0, nouns.tags[tag].length-1);
 
-        if (n == lastNoun) {
+        if (tag != lastTag && n == lastNoun) {
             n = getKindaRandomNounIndex();
         }
 
         lastNoun = n;
+        lastTag = tag;
 
         return n;
     }
@@ -60,11 +64,17 @@ var butter = (function($){
         return v;
     }
 
-    function getNounFromDictionary() {
+    function getNounFromDictionary(tags) {
         var n = 'butter';
 
         if (nouns !== null) {
-            n = nouns[getKindaRandomNounIndex()];
+            if (tags.forbid == []) {
+                n = nouns.tags.global[getKindaRandomNounIndex('global')];
+            } else {
+                //if the list of tags doesn't exist, build it
+                //then, pick from the tags that are not forbidden
+                //always exclude global here
+            }
         }
 
         return n;
@@ -72,7 +82,7 @@ var butter = (function($){
 
     function loadData()
     {
-        $.getJSON('data/words.json', function(data) {
+        $.getJSON('build/words.compiled.json', function(data) {
             verbs = data.verbs;
             nouns = data.nouns;
         });

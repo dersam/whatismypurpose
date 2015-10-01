@@ -17,7 +17,7 @@ gulp.task('minify', function () {
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(concat('app.js'))
-        .pipe(sourcemaps.write('../'))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('build'));
 });
 
