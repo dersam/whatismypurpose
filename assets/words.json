@@ -3,9 +3,6 @@
     {
       "verb":"beautify",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -14,9 +11,6 @@
     {
       "verb":"block",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -25,9 +19,6 @@
     {
       "verb":"brainwash",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -36,9 +27,6 @@
     {
       "verb":"build",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -47,9 +35,6 @@
     {
       "verb":"burn",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -58,9 +43,6 @@
     {
       "verb":"cloister",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -69,9 +51,6 @@
     {
       "verb":"come",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -80,9 +59,6 @@
     {
       "verb":"contort",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -91,9 +67,6 @@
     {
       "verb":"cook",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -102,9 +75,6 @@
     {
       "verb":"cut",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -113,9 +83,6 @@
     {
       "verb":"deduce",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -124,9 +91,6 @@
     {
       "verb":"direct",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -135,9 +99,6 @@
     {
       "verb":"discipline",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -146,9 +107,6 @@
     {
       "verb":"flatten",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -157,9 +115,6 @@
     {
       "verb":"greet",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -168,9 +123,6 @@
     {
       "verb":"hail",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -179,9 +131,6 @@
     {
       "verb":"harbor",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -190,9 +139,6 @@
     {
       "verb":"humor",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -201,9 +147,6 @@
     {
       "verb":"ignite",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -212,9 +155,6 @@
     {
       "verb":"imbibe",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -223,9 +163,6 @@
     {
       "verb":"indoctrinate",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -234,9 +171,6 @@
     {
       "verb":"keep",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -245,9 +179,6 @@
     {
       "verb":"kill",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -256,9 +187,6 @@
     {
       "verb":"pass",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -267,9 +195,6 @@
     {
       "verb":"pipe",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -278,9 +203,6 @@
     {
       "verb":"quote",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -289,9 +211,6 @@
     {
       "verb":"regurgitate",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -300,9 +219,6 @@
     {
       "verb":"return",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -311,9 +227,6 @@
     {
       "verb":"salt",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -322,9 +235,6 @@
     {
       "verb":"simmer",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -333,9 +243,6 @@
     {
       "verb":"snort",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -344,9 +251,6 @@
     {
       "verb":"swap",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -355,9 +259,6 @@
     {
       "verb":"taste",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -366,9 +267,6 @@
     {
       "verb":"thrill",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -377,9 +275,6 @@
     {
       "verb":"torment",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -388,9 +283,6 @@
     {
       "verb":"undertake",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
@@ -399,9 +291,6 @@
     {
       "verb":"vindicate",
       "tags":{
-        "allow":[
-
-        ],
         "forbid":[
 
         ]
