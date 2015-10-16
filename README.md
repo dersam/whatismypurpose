@@ -1,6 +1,8 @@
 # whatismypurpose
 Well what is it?
 
+http://dersam.net/whatismypurpose/
+
 ### Contributing
 To submit more words, send a pull request.
 
